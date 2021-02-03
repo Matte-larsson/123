@@ -1,4 +1,5 @@
-object Main extends App {
-	println("Heja Lule!")
-	println("Whatever")
+import demo._
+
+object Main extends App{
+	Types.test()
 }
