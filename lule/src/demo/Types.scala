@@ -5,6 +5,15 @@ object Types {
     val b = "hejdå"
     val i = 42
     val pi: Double = 3.1415
+    val speech = """dd
+    Hej
+    då"""
+
+    var firstName = "Matte"
+    var mi = "Lars"
+    var lastName = "Larsson"
+
+    val name = firstName + " " + mi + " " + lastName
 
     val iIs42 = 42 == i
 
@@ -21,5 +30,12 @@ object Types {
         println("iIs42 är true")
         else
         println("iIs42 är false")
+
+        println(speech)
+
+        println(name)
+
+
+        System.err.println("Gör om gör rätt")
     }
 }
