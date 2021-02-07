@@ -6,7 +6,7 @@ object Dice {
 
   def game() = {
     val rnd = new Random
-    val guess = readLine("gissa vad det blir av två tärningar: ").toInt
+    val guess = readLine("gissa vad det blir av två tärningar").toInt
     val dice1 = rnd.between(1, 7)
     val dice2 = rnd.between(1, 7)
     val summa = dice1 + dice2
@@ -16,7 +16,7 @@ object Dice {
       println("Rätt svar")
     else {
       val diff = Math.abs(guess - summa)
-      println(s"Diff fel $diff")
+      println("Diff fel $diff ")
     }
 
   }

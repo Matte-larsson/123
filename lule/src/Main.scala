@@ -1,5 +1,5 @@
 import demo._
 
 object Main extends App{
-	demo.Dice.game ()
+	demo.Quizz.start ()
 }
