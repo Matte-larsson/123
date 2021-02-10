@@ -1,6 +1,7 @@
 package demo
 import scala.io.StdIn.readLine
 import java.math.MathContext
+import scala.io.AnsiColor.RED
 
 object Quizz {
 
