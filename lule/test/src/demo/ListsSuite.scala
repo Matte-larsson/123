@@ -1,22 +1,47 @@
 package demo
 
 import utest._
-import scala.collection.Iterable
 
 object ListsSuite extends TestSuite {
   val tests = Tests {
 
-    test("endsWith") - {
-      val list = List(korv)
-      val r = Lists.endsWith(v, list)
+    test("StartsWithInt") - {
+      val list = List(1, 2, 3, 4, 5)
+      val start = 1
+
+      val r = Lists.startsWithInt(start, list)
 
       assert {
-        r == List(true)
+        r == true
+      }
+
+    }
+
+    test("endsWith True") - {
+      val list = List(1, 2, 3, 4, 5)
+      val end = List(4, 5)
+
+      val r = Lists.endsWith(end, list)
+
+      assert {
+        r == (true)
+      }
+    }
+
+    test("endsWith false") - {
+      val list: List[Int] = List(1, 2, 3, 4, 5)
+      val end = List(2, 3)
+
+      val r = Lists.endsWith(end, list)
+
+      assert {
+        r == (false)
       }
     }
 
     test("dropRight") - {
       val list = List(1, 2, 3, 4)
+      
       val r = Lists.dropRight(2, list)
 
       assert {

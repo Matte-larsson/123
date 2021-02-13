@@ -16,12 +16,14 @@ object Lists {
 
   def distinct(xs: List[Int]): List[Int] = xs.distinct
 
-  def addFirst(x: Int, xs: List[Int]): List[Int] = x +: xs
+  def addFirst(x: Int, xs: List[Int]) = x +: xs
 
-  def addLast(x: Int, xs: List[Int]): List[Int] = xs :+ x
+  def addLast(x: Int, xs: List[Int]) = xs :+ x
 
-  def dropRight(n: Int, xs: List[Int]): List[Int] = xs.dropRight(n)
+  def dropRight(n: Int, xs: List[Int]) = xs.dropRight(n)
 
-  def endsWith(x: Int, xs: List[Int]): List[Int] Boolean = xs.endsWith(x)
+  def endsWith(x: List[Int], xs: List[Int]) = xs.endsWith(x)
+
+  def startsWithInt(x: Int, xs: List[Int]) = xs.startsWith(List(x))
 
 }
