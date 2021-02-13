@@ -41,7 +41,7 @@ object ListsSuite extends TestSuite {
 
     test("dropRight") - {
       val list = List(1, 2, 3, 4)
-      
+
       val r = Lists.dropRight(2, list)
 
       assert {

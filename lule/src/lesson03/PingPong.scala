@@ -1,7 +1,14 @@
 package lesson03
 
-object Hello {
+object PingPong {
 
-    def
+  def hello(x: String): String = {
+    if (x.equalsIgnoreCase("ping"))
+      "pong"
+    else if (x.equalsIgnoreCase("pong"))
+      "ping"
+    else
+      "what"
+  }
 
 }
